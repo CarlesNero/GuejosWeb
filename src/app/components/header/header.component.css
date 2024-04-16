@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  padding: 1.5rem 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & h1 {
+    font-weight: 900;
+  }
+  & .controller {
+    font-size: 42px;
+  }
+}

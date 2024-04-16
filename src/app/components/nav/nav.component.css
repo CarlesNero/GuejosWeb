@@ -1,0 +1,186 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  font-weight: 600;
+  & a {
+    text-decoration: none;
+    color: var(--ghost-white);
+  }
+}
+
+.iconos {
+  display: flex;
+  gap: 1rem;
+  font-size: 25px;
+  align-items: center;
+
+  & a {
+    color: var(--ghost-white);
+  }
+
+  & a:hover {
+    color: var(--tomato);
+  }
+}
+
+.search {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+
+  & input {
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 5rem;
+  }
+
+  & input::content {
+    padding-left: 2rem;
+    outline: 0;
+  }
+
+  & a {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    font-size: 20px;
+    color: var(--rich-black);
+  }
+}
+
+.right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  margin-top: 1rem;
+  list-style: none;
+  position: absolute;
+  background-color: var(--ghost-white);
+  padding: 1rem;
+  width: 12rem;
+  z-index: 5;
+  border-radius: 5px;
+  top: 7px;
+  text-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.dropdown a {
+  color: var(--rich-black);
+}
+
+.seccion {
+  position: relative;
+}
+
+.seccion a:hover {
+  color: var(--tomato);
+}
+
+.seccion:hover .dropdown {
+  display: flex;
+}
+
+.dropdown a:hover {
+  margin-left: 1rem;
+  color: var(--tomato);
+}
+
+.menu-m {
+  color: var(--ghost-white);
+  display: none;
+}
+
+@media (width < 1280px) {
+  nav {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (width < 675px) {
+  .search {
+    & input {
+      padding: 5px 0rem;
+    }
+
+    & input::content {
+      padding-left: 2rem;
+      outline: 0;
+    }
+
+    & a {
+      position: absolute;
+      left: 5px;
+      top: 2px;
+      font-size: 20px;
+      color: var(--rich-black);
+    }
+  }
+
+  .right {
+    flex-direction: column;
+  }
+
+  .menu-m {
+    color: var(--ghost-white);
+    display: block;
+    cursor: pointer;
+  }
+
+  .boton {
+    width: 150px;
+    height: 5px;
+    background-color: var(--ghost-white);
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background-color: var(--rich-black);
+    padding: 2rem 3.5em;
+    top: -100px;
+    left: -100px;
+  }
+
+  .boton:hover .menu {
+    display: flex;
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    list-style: none;
+    position: relative;
+    background-color: var(--ghost-white);
+    padding: 1rem;
+    width: 12rem;
+    z-index: 5;
+    border-radius: 5px;
+    top: 5px;
+    left: 2rem;
+    text-wrap: nowrap;
+    gap: 0.5rem;
+  }
+}
