@@ -81,12 +81,23 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagen-container {
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 5px;
+  width: 450px;
+  height: 300px;
+}
+
+.imagen-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
 }
 
 .section {
@@ -112,5 +123,3 @@ h6 {
     font-size: 20px;
   }
 }
-
-
