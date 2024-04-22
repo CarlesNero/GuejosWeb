@@ -1,0 +1,16 @@
+.videojuegos {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--ghost-white);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.imagen-container img {
+  width: 100px;
+}
+
+.nintendo {
+  width: 150px;
+  margin-top: 2.5rem;
+}

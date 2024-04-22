@@ -105,6 +105,16 @@ nav {
   display: none;
 }
 
+.nav-mobile {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
+
+
 @media (width < 1280px) {
   nav {
     flex-direction: column;
@@ -115,72 +125,68 @@ nav {
 }
 
 @media (width < 675px) {
-  .search {
-    & input {
-      padding: 5px 0rem;
-    }
+  .burger-menu {
+    display: block;
+  }
+  .menu-mobile:hover .nav-mobile {
+    display: flex;
+  }
 
-    & input::content {
-      padding-left: 2rem;
-      outline: 0;
-    }
+  .nav-mobile {
+    display: none;
+    background-color: var(--tomato);
+    height: 35rem;
+    align-items: start;
+    justify-content: start;
+    padding: 2rem;
+  }
+  .menu-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-    & a {
-      position: absolute;
-      left: 5px;
-      top: 2px;
-      font-size: 20px;
-      color: var(--rich-black);
-    }
+  .burger-menu {
+    margin: 0 auto;
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--ghost-white);
+    cursor: pointer;
+  }
+
+  .seccion a:hover {
+    color: var(--rich-black);
   }
 
   .right {
     flex-direction: column;
+    align-items: start;
   }
 
-  .menu-m {
-    color: var(--ghost-white);
-    display: block;
-    cursor: pointer;
+  .iconos {
+    display: flex;
   }
 
-  .boton {
-    width: 150px;
-    height: 5px;
-    background-color: var(--ghost-white);
-    cursor: pointer;
-    border-radius: 5px;
-    position: relative;
+  .nav-dropdown {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
   }
 
   .menu {
-    display: none;
     flex-direction: column;
-    position: absolute;
-    z-index: 5;
-    background-color: var(--rich-black);
-    padding: 2rem 3.5em;
-    top: -100px;
-    left: -100px;
   }
 
-  .boton:hover .menu {
-    display: flex;
-  }
   .dropdown {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    list-style: none;
-    position: relative;
-    background-color: var(--ghost-white);
-    padding: 1rem;
-    width: 12rem;
-    z-index: 5;
-    border-radius: 5px;
-    top: 5px;
-    left: 2rem;
-    text-wrap: nowrap;
-    gap: 0.5rem;
+    top: -2rem;
+    left: 10rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .iconos a:hover {
+    color: var(--rich-black);
   }
 }

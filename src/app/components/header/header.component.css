@@ -17,3 +17,9 @@ header {
     font-size: 42px;
   }
 }
+
+header a{
+  text-decoration: none;
+  color: var(--ghost-white);
+}
+

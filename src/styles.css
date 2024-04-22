@@ -100,3 +100,17 @@ h6 {
     text-wrap: nowrap;
   }
 }
+
+.titulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem;
+  color: var(--tomato);
+
+  & i {
+    font-size: 20px;
+  }
+}
+
+
