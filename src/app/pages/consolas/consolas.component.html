@@ -6,128 +6,55 @@
 <section class="section">
   <h4>PS5</h4>
   <section class="section-grid">
-    <div class="item">
+    <div *ngFor="let item of ps5" class="item">
       <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
+        <a href="/playstation"
+          ><img src="{{ item.image }}" alt="{{ item.name }}"
+        /></a>
       </div>
-      <p>PS5</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1635048424329-a9bfb146d7aa?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Ps5 + mando</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1635048393237-3b90e5c4a692?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>PS5 + 2 mandos</p>
+      <p>{{ item.name }}</p>
     </div>
   </section>
 </section>
+
 <section class="section">
   <h4>Xbox One</h4>
   <section class="section-grid">
-    <div class="item">
+    <div *ngFor="let item of xbox" class="item">
       <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
+        <a href="/playstation"
+          ><img src="{{ item.image }}" alt="{{ item.name }}"
+        /></a>
       </div>
-      <p>Xbox</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1604586376807-f73185cf5867?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Xbox + mando</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1632312527375-bd5d5a0d3484?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Mando Xbox</p>
+      <p>{{ item.name }}</p>
     </div>
   </section>
 </section>
+
 <section class="section">
   <h4>Nintendo Switch</h4>
   <section class="section-grid">
-    <div class="item">
+    <div *ngFor="let item of nintendo" class="item">
       <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
+        <a href="/playstation"
+          ><img src="{{ item.image }}" alt="{{ item.name }}"
+        /></a>
       </div>
-      <p>Nintendo Switch</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1612036781124-847f8939b154?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Nintendo Switch + base</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1585857188823-77658a70979a?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Mando Nintendo Switch</p>
+      <p>{{ item.name }}</p>
     </div>
   </section>
 </section>
+
 <section class="section">
-  <h4>PC Master Race</h4>
+  <h4>Retro</h4>
   <section class="section-grid">
-    <div class="item">
+    <div *ngFor="let item of retro" class="item">
       <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
+        <a href="/playstation"
+          ><img src="{{ item.image }}" alt="{{ item.name }}"
+        /></a>
       </div>
-      <p>Componentes</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1527443195645-1133f7f28990?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Mac sobremesa 🤮</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1542729716-6d1890d980ee?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Pc gaming verde</p>
+      <p>{{ item.name }}</p>
     </div>
   </section>
 </section>

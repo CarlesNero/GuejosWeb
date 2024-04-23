@@ -27,3 +27,20 @@
   height: 100%;
   object-position: center;
 }
+
+
+@media (width < 1000px){
+  .videojuegos {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+
+@media (width < 640px){
+  .videojuegos {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+}

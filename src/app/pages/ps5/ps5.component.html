@@ -6,6 +6,12 @@
   </div>
 
   <div class="info">
-    <h1></h1>
+    <h1>{{ items.titulo }}</h1>
+    <p>{{ items.descripcion }}</p>
+    <p><span> Genero: </span>{{ items.genero }}</p>
+    <div class="iconos">
+      <img src="{{ items.pegi }}" alt="" />
+      <img src="{{ items.esrb }}" alt="" />
+    </div>
   </div>
 </section>

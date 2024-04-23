@@ -8,7 +8,9 @@
   <section class="section-grid">
     <div *ngFor="let phone of smartPhone" class="item">
       <div class="imagen-container">
-        <img src="{{ phone.image }}" alt="{{ phone.name }}" />
+        <a href="/smartphone">
+          <img src="{{ phone.image }}" alt="{{ phone.name }}"
+        /></a>
       </div>
       <p>{{ phone.name }}</p>
     </div>
@@ -20,7 +22,9 @@
   <section class="section-grid">
     <div *ngFor="let tablet of Tablets" class="item">
       <div class="imagen-container">
-        <img src="{{ tablet.image }}" alt="{{ tablet.name }}" />
+        <a href="/smartphone">
+          <img src="{{ tablet.image }}" alt="{{ tablet.name }}"
+        /></a>
       </div>
       <p>{{ tablet.name }}</p>
     </div>
@@ -32,7 +36,9 @@
   <section class="section-grid">
     <div *ngFor="let watch of Relojes" class="item">
       <div class="imagen-container">
-        <img src="{{ watch.image }}" alt="{{ watch.name }}" />
+        <a href="/smartphone"
+          ><img src="{{ watch.image }}" alt="{{ watch.name }}"
+        /></a>
       </div>
       <p>{{ watch.name }}</p>
     </div>
@@ -44,7 +50,9 @@
   <section class="section-grid">
     <div *ngFor="let buds of Auriculares" class="item">
       <div class="imagen-container">
-        <img src="{{ buds.image }}" alt="{{ buds.name }}" />
+        <a href="/smartphone"
+          ><img src="{{ buds.image }}" alt="{{ buds.name }}"
+        /></a>
       </div>
       <p>{{ buds.name }}</p>
     </div>
@@ -56,7 +64,9 @@
   <section class="section-grid">
     <div *ngFor="let dron of Drones" class="item">
       <div class="imagen-container">
-        <img src="{{ dron.image }}" alt="{{ dron.name }}" />
+        <a href="/smartphone"
+          ><img src="{{ dron.image }}" alt="{{ dron.name }}"
+        /></a>
       </div>
       <p>{{ dron.name }}</p>
     </div>
