@@ -10,4 +10,6 @@ import { Component } from '@angular/core';
 export class PcComponent {
 
   titulo: string = 'PC';
+
+  
 }

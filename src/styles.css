@@ -123,3 +123,13 @@ h6 {
     font-size: 20px;
   }
 }
+
+.imagen-container {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.imagen-container:hover {
+  scale: 1.05;
+  filter: drop-shadow(0 0 0.75rem #000000);
+}

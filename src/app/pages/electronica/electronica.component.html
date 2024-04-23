@@ -4,130 +4,61 @@
 </div>
 
 <section class="section">
-  <h4>PS5</h4>
+  <h4>SmartPhones</h4>
   <section class="section-grid">
-    <div class="item">
+    <div *ngFor="let phone of smartPhone" class="item">
       <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
+        <img src="{{ phone.image }}" alt="{{ phone.name }}" />
       </div>
-      <p>Juego 1</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Juego 1</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Juego 1</p>
+      <p>{{ phone.name }}</p>
     </div>
   </section>
 </section>
+
 <section class="section">
-  <h4>Xbox One</h4>
+  <h4>Tablets</h4>
   <section class="section-grid">
-    <div class="item">
+    <div *ngFor="let tablet of Tablets" class="item">
       <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
+        <img src="{{ tablet.image }}" alt="{{ tablet.name }}" />
       </div>
-      <p>Juego 1</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Juego 1</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Juego 1</p>
+      <p>{{ tablet.name }}</p>
     </div>
   </section>
 </section>
+
 <section class="section">
-  <h4>Nintendo Switch</h4>
+  <h4>Relojes</h4>
   <section class="section-grid">
-    <div class="item">
+    <div *ngFor="let watch of Relojes" class="item">
       <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
+        <img src="{{ watch.image }}" alt="{{ watch.name }}" />
       </div>
-      <p>Juego 1</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Juego 1</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Juego 1</p>
+      <p>{{ watch.name }}</p>
     </div>
   </section>
 </section>
+
 <section class="section">
-  <h4>PC Master Race</h4>
+  <h4>Auriculares</h4>
   <section class="section-grid">
-    <div class="item">
+    <div *ngFor="let buds of Auriculares" class="item">
       <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
+        <img src="{{ buds.image }}" alt="{{ buds.name }}" />
       </div>
-      <p>Juego 1</p>
+      <p>{{ buds.name }}</p>
     </div>
-    <div class="item">
+  </section>
+</section>
+
+<section class="section">
+  <h4>Drones</h4>
+  <section class="section-grid">
+    <div *ngFor="let dron of Drones" class="item">
       <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
+        <img src="{{ dron.image }}" alt="{{ dron.name }}" />
       </div>
-      <p>Juego 1</p>
-    </div>
-    <div class="item">
-      <div class="imagen-container">
-        <img
-          src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="juego 1"
-        />
-      </div>
-      <p>Juego 1</p>
+      <p>{{ dron.name }}</p>
     </div>
   </section>
 </section>
